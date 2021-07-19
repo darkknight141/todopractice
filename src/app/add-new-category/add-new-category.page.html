@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add New Category</ion-title>
+    <ion-icon name="close" slot="end" size="larger" class="ion-padding" (click)="dismis()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-align-self-center" >
+    <ion-item>
+      <ion-textarea [(ngModel)]='newCategory' placeholder="Write category here"></ion-textarea>
+   </ion-item>
+
+   <ion-button class="ion-margin" expand="block" (click)= addCategories()>Add Category</ion-button>
+  </ion-card>
+</ion-content>
